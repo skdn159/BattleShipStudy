@@ -10,7 +10,7 @@ public:
     void SetIsGameOver(bool isgameover) { m_IsGameover = m_IsGameover; }
     bool GetIsGameOver(){ return m_IsGameover; }
     int  GameLoop();
-
+    int  GameStart();
 
 private:
     bool m_IsGameover;

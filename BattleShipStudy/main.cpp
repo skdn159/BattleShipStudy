@@ -6,7 +6,7 @@ int main()
     GameManager* gameManager = new GameManager();
     
     int checkNum;
-    checkNum = gameManager->GameLoop();
+    checkNum = gameManager->GameStart();
 
 
     if (checkNum != 0){

@@ -13,7 +13,12 @@ GameManager::~GameManager()
 {
 }
 
+int GameManager::GameStart()
+{
+    GameLoop();
+}
 int GameManager::GameLoop()
 {
 
 }
+
