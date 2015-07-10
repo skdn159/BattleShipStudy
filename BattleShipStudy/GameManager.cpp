@@ -2,9 +2,10 @@
 
 
 GameManager::GameManager()
-: isGameover(false)
-
+: m_IsGameover(false),
+m_InputManager(nullptr)
 {
+
 }
 
 
