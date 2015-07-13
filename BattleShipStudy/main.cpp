@@ -6,7 +6,7 @@ int main()
     GameManager* gameManager = GameManager::GetInstance();
     
     int checkNum;
-    checkNum = gameManager->GameLoop();
+    checkNum = gameManager->GameStart();
 
     //앞으로 쭉 0 = 정상적 종료, -1 비정상적 종료
     if (checkNum != 0){

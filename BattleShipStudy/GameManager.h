@@ -13,10 +13,14 @@ public:
     void SetIsGameOver(bool isgameover) { m_IsGameover = m_IsGameover; }
     bool GetIsGameOver(){ return m_IsGameover; }
     int  GameLoop();
+<<<<<<< HEAD
 
 private:
     GameManager();
     ~GameManager();
+=======
+    int  GameStart();
+>>>>>>> origin/master
 
 private:
     bool m_IsGameover;

@@ -14,6 +14,10 @@ GameManager::~GameManager()
     delete m_InputManager;
 }
 
+int GameManager::GameStart()
+{
+    GameLoop();
+}
 int GameManager::GameLoop()
 {   //0 정상적 종료, 비정상적 종료 -1
 
@@ -23,3 +27,4 @@ int GameManager::GameLoop()
 
     return -1;
 }
+
