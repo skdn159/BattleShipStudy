@@ -1,9 +1,8 @@
 #pragma once
-#include "GameManager.h"
-class InputManager :
-    public GameManager
+class InputManager 
 {
 public:
+
     InputManager();
     ~InputManager();
 };

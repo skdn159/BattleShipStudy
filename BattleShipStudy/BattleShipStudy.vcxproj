@@ -91,6 +91,7 @@
     <ClInclude Include="BattleShip.h" />
     <ClInclude Include="Cruiser.h" />
     <ClInclude Include="Destroyer.h" />
+    <ClInclude Include="Enum.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Player.h" />

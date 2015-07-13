@@ -3,18 +3,17 @@
 
 int main()
 {
-    GameManager* gameManager = new GameManager();
+    GameManager* gameManager = GameManager::GetInstance();
     
     int checkNum;
     checkNum = gameManager->GameLoop();
 
-
+    //앞으로 쭉 0 = 정상적 종료, -1 비정상적 종료
     if (checkNum != 0){
         printf("Abnormally Terminated\n");
         return -1;
     }
     
 
-    delete gameManager;
     return 0;
 }
