@@ -16,7 +16,9 @@ GameManager::~GameManager()
 
 int GameManager::GameStart()
 {
-    GameLoop();
+    int checkNum;
+    checkNum = GameLoop();
+    return checkNum;
 }
 int GameManager::GameLoop()
 {   //0 정상적 종료, 비정상적 종료 -1

@@ -18,4 +18,5 @@ void Ship::SetPosition(Position pos)
 HitResult Ship::HitCheck(Position pos)
 {
 
+    return DEFAULT;
 }

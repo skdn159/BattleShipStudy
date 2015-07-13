@@ -1,11 +1,6 @@
 #pragma once
-<<<<<<< HEAD
-class InputManager 
-=======
-#include "GameManager.h"
 
-class InputManager : public GameManager
->>>>>>> origin/master
+class InputManager 
 {
 public:
 
