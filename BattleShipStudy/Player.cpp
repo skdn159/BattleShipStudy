@@ -32,20 +32,25 @@ HitResult Player::DoPlayerHitCheck(Position hitPos)
 {
     HitResult hitResult;
     for (auto& ship : m_ShipList){
-
-
         hitResult = ship->HitCheck(hitPos);
+
+        if (hitResult != MISS){
+            return hitResult;
+        }
     }
+    return MISS;
 }
 
 Position Player::Attack()
 {
 
+    return { 3, 1 };
 }
 
 bool Player::CheckShipAllSunk()
 {
 
+    return false;
 }
 
 void Player::PlaceShip(ShipType shipType, Position startPos, Dir dir)

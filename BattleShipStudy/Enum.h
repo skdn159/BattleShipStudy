@@ -1,3 +1,5 @@
+#pragma once
+
 #define  MAX_SHIPNUM 5
 
 struct Position
@@ -20,10 +22,14 @@ struct Position
 };
 enum HitResult
 {
-    DEFAULT,
     HIT,
     MISS,
     DESTROY,
+
+    DESTROY_AIRCRAFT,
+    DESTROY_BATTLESHIP,
+    DESTROY_CRUISER,
+    DESTROY_DESTROYER,
 
 };
 
