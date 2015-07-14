@@ -11,21 +11,22 @@ public:
     Player();
     ~Player();
 
-    bool GetIsMyTurn(){ return m_IsMyTurn; }
-    void SetPlayerTunr(bool turn){ m_IsMyTurn = turn; }
+    void        PlayerInit();
+    bool        GetIsMyTurn(){ return m_IsMyTurn; }
+    void        SetPlayerTunr(bool turn){ m_IsMyTurn = turn; }
     
-    HitResult DoPlayerHitCheck(Position hitPos);
-    Position  Attack();
-    bool CheckShipAllSunk();
-    void PlaceShip(ShipType shipType, Position startPos, Dir dir);
+    HitResult   DoPlayerHitCheck(Position hitPos);
+    Position    Attack();
+    bool        CheckShipAllSunk();
+    void        PlaceShip(ShipType shipType, Position startPos, Dir dir);
 
-private:
+protected:
     std::string         m_PlayerName;
     std::vector<Ship*>  m_ShipList;
     PlayerType          m_PlayerType;
     bool                m_IsMyTurn;
     Map*                m_PlayerMap;
-
+    Position            m_TargetPos;
 
 };
 

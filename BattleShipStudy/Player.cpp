@@ -28,6 +28,11 @@ Player::~Player()
     delete m_PlayerMap;
 }
 
+void Player::PlayerInit()
+{
+    //PlaceShip();
+}
+
 HitResult Player::DoPlayerHitCheck(Position hitPos)
 {
     HitResult hitResult;
@@ -57,3 +62,5 @@ void Player::PlaceShip(ShipType shipType, Position startPos, Dir dir)
 {
 
 }
+
+
