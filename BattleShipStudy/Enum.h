@@ -33,3 +33,9 @@ enum ShipType
     CRUISER,
     DESTROYER,
 }; 
+
+enum PlayerType
+{
+    HUMAN,
+    AI,
+};
