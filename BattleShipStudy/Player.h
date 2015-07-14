@@ -3,6 +3,7 @@
 #include "stdafx.h"
 
 class Ship;
+class Map;
 
 class Player
 {
@@ -10,20 +11,20 @@ public:
     Player();
     ~Player();
 
+    bool GetIsMyTurn(){ return m_IsMyTurn; }
+    void SetPlayerTunr(bool turn){ m_IsMyTurn = turn; }
     
     HitResult DoPlayerHitCheck(Position hitPos);
     Position  Attack();
-
-    bool GetIsMyTurn(){ return m_IsMyTurn; }
-    void SetPlayerTunr(bool turn){ m_IsMyTurn = turn; }
-
-
+    bool CheckShipAllSunk();
+    void PlaceShip(ShipType shipType, Position startPos, Dir dir);
 
 private:
-    std::string m_PlayerName;
-    std::vector<Ship*> m_ShipList;
-    bool m_IsMyTurn;
-
+    std::string         m_PlayerName;
+    std::vector<Ship*>  m_ShipList;
+    PlayerType          m_PlayerType;
+    bool                m_IsMyTurn;
+    Map*                m_PlayerMap;
 
 
 };

@@ -1,3 +1,5 @@
+#define  MAX_SHIPNUM 5
+
 struct Position
 {
     int x; // คั
@@ -34,8 +36,15 @@ enum ShipType
     DESTROYER,
 }; 
 
+enum Dir
+{
+    HORIZONTAL,
+    VERTICAL,
+};
+
 enum PlayerType
 {
+    PLAYER_DEFAULT,
     HUMAN,
     AI,
 };
