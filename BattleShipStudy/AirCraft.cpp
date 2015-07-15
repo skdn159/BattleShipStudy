@@ -12,3 +12,14 @@ AirCraft::AirCraft()
 AirCraft::~AirCraft()
 {
 }
+
+HitResult AirCraft::HitCheck(Position pos)
+{
+    HitResult hitResult = Ship::HitCheck(pos);
+
+    if (hitResult == DESTROY){
+        return DESTROY_AIRCRAFT;
+    }
+
+    return hitResult;
+}

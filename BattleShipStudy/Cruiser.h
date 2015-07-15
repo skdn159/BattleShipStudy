@@ -6,5 +6,8 @@ class Cruiser :
 public:
     Cruiser();
     ~Cruiser();
+
+    HitResult   HitCheck(Position pos);
+
 };
 

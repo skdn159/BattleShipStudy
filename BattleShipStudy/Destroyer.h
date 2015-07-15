@@ -6,5 +6,8 @@ class Destroyer :
 public:
     Destroyer();
     ~Destroyer();
+
+    HitResult   HitCheck(Position pos);
+
 };
 

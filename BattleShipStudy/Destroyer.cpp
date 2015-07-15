@@ -13,3 +13,14 @@ Destroyer::Destroyer()
 Destroyer::~Destroyer()
 {
 }
+
+HitResult Destroyer::HitCheck(Position pos)
+{
+    HitResult hitResult = Ship::HitCheck(pos);
+
+    if (hitResult == DESTROY){
+        return DESTROY_DESTROYER;
+    }
+
+    return hitResult;
+}

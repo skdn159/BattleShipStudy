@@ -13,3 +13,14 @@ BattleShip::BattleShip()
 BattleShip::~BattleShip()
 {
 }
+
+HitResult BattleShip::HitCheck(Position pos)
+{
+    HitResult hitResult = Ship::HitCheck(pos);
+
+    if (hitResult == DESTROY){
+        return DESTROY_BATTLESHIP;
+    }
+
+    return hitResult;
+}

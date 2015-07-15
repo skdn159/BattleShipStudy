@@ -6,5 +6,8 @@ class BattleShip :
 public:
     BattleShip();
     ~BattleShip();
+
+    HitResult   HitCheck(Position pos);
+
 };
 

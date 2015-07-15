@@ -36,10 +36,10 @@ enum HitResult
 enum ShipType
 {
     SHIP_DEFAULT,
-    AIRCRAFT,
-    BATTLESHIP,
-    CRUISER,
-    DESTROYER,
+    AIRCRAFT=5,
+    BATTLESHIP=4,
+    CRUISER=3,
+    DESTROYER=2,
 }; 
 
 enum Dir

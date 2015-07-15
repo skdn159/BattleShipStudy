@@ -6,5 +6,7 @@ class AirCraft : public Ship
 public:
     AirCraft();
     ~AirCraft();
+
+    HitResult   HitCheck(Position pos);
 };
 

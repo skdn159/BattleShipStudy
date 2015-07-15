@@ -14,7 +14,7 @@ Player::Player()
     m_ShipList.push_back(new Destroyer());
     m_ShipList.push_back(new Destroyer());
 
-    m_PlayerMap = new Map();
+    m_PlayerMap = new Map(this);
 
 }
 
