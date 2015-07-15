@@ -58,9 +58,19 @@ bool Player::CheckShipAllSunk()
     return false;
 }
 
-void Player::PlaceShip(ShipType shipType, Position startPos, Dir dir)
+void Player::SetAShip(ShipType shipType, Position startPos, Dir dir)
 {
 
+}
+
+void Player::PlaceShips()
+{
+    //SetAShip()
+}
+
+void Player::ReceiveHitResult(HitResult hitResult)
+{
+    // Manipulate Map
 }
 
 

@@ -54,3 +54,10 @@ enum PlayerType
     HUMAN,
     AI,
 };
+
+enum GameTurn
+{
+    PLAYER1_TURN,
+    PLAYER2_TURN,
+    
+};

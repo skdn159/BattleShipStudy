@@ -18,7 +18,9 @@ public:
     HitResult   DoPlayerHitCheck(Position hitPos);
     Position    Attack();
     bool        CheckShipAllSunk();
-    void        PlaceShip(ShipType shipType, Position startPos, Dir dir);
+    void        SetAShip(ShipType shipType, Position startPos, Dir dir);
+    void        PlaceShips();
+    void        ReceiveHitResult(HitResult hitResult);
 
 protected:
     std::string         m_PlayerName;
